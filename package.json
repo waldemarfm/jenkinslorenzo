@@ -1,0 +1,27 @@
+{
+  "name": "jenkinslorenzo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass --include-path node_modules sass/styles.scss public/css/styles.css",
+    "sass-watch": "npx node-sass -w -r --include-path node_modules sass/styles.scss public/css/styles.css",
+    "svg-sprite": "svg-sprite --symbol --symbol-dest . --symbol-sprite svg/sprite.svg --svg-namespace-classnames=false --dest public 'public/svg/**/*.svg'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waldemarfm/jenkinslorenzo.git"
+  },
+  "author": "Waldemar Figueroa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waldemarfm/jenkinslorenzo/issues"
+  },
+  "homepage": "https://github.com/waldemarfm/jenkinslorenzo#readme",
+  "dependencies": {
+    "inuitcss": "^6.0.0",
+    "node-sass": "^4.8.3",
+    "scut": "^1.4.0",
+    "svg-sprite": "^1.4.0"
+  }
+}

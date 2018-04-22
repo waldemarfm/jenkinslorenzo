@@ -1,0 +1,23 @@
+/* ========================================================================
+   #NAV
+   ======================================================================== */
+
+.jl-nav {
+  @include scut-fixed(0 0 n 0);
+  z-index: 1; 
+  background-color: $jl-color-primary;
+}
+
+.jl-navbar {
+  display: flex;
+
+  > a {
+    display: block; 
+    padding: scut-em(12px) 0;
+    flex: 1;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+  }
+}

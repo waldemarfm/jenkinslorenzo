@@ -1,0 +1,33 @@
+/* ========================================================================
+   #BOX
+   ======================================================================== */
+
+.jl-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 24px;
+  padding: 24px 96px;
+  background-color: #E7E7E7;
+  border-radius: 48px;
+  color: $jl-color-primary;
+
+  > p {
+    margin-bottom: 0;
+  }
+
+  .jl-icon {
+    @include scut-size(scut-em(96px));
+    margin-bottom: 24px;
+  }
+
+  .jl-heading {
+    margin-bottom: 24px;
+  }
+}
+
+.jl-box--dark {
+  background-color: $jl-color-primary;
+  color: #fff;
+}

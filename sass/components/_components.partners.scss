@@ -1,0 +1,45 @@
+/* ========================================================================
+   #PARTNERS
+   ======================================================================== */
+
+.jl-partners {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: $jl-color-offwhite;
+  justify-content: space-between;
+}
+
+.jl-partner {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  margin-bottom: 0;
+
+  &:first-child {
+    margin-right: 24px;
+  } 
+}
+
+.jl-partner__img {
+  @include scut-absolute;
+  @include scut-size(100%);
+  object-fit: cover;
+  object-position: top center;
+}
+
+.jl-partner__img--chase {
+  transform: scale(1.2) translateY(24px);
+}
+
+.jl-partner__name {
+  @include scut-absolute(n 0 0 0);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: $jl-color-primary;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}

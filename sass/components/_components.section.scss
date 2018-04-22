@@ -1,0 +1,15 @@
+/* ========================================================================
+   #SECTION
+   ======================================================================== */
+
+.jl-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  justify-content: space-between;
+
+  > .jl-box {
+    max-width: 49%;
+  }
+}

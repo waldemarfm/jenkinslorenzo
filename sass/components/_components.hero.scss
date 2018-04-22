@@ -1,0 +1,16 @@
+/* ========================================================================
+   #VIDEO
+   ======================================================================== */
+
+.jl-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.jl-hero__video {
+  @include scut-absolute;
+  @include scut-size(100%);
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,24 @@
+/* ========================================================================
+   #INPUT
+   ======================================================================== */
+
+.jl-input-container {
+  position: relative;
+  margin-top: scut-rem(12px);
+
+  > label {
+    position: absolute;
+    top: 0;
+    left: scut-rem(6px);
+    font-size: scut-em(14px);
+  }
+}
+
+.jl-input {
+  display: block;
+  width: 100%;
+  padding: scut-em(24px 6px 6px 6px);
+  background-color: #ebebeb;
+  border: 0;
+  border-radius: 0;
+}

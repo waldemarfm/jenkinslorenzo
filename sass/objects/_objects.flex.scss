@@ -1,0 +1,266 @@
+/* ==========================================================================
+   #FLEX
+   ========================================================================== */
+
+/**
+ * Container object
+ */
+
+ .o-flex {
+  display: flex;
+}
+
+@if variable-exists(mq-breakpoints) {
+  @each $bp-name, $bp-value in $mq-breakpoints {
+    @include mq($from: $bp-name) {
+      .o-flex\@#{$bp-name} {
+        display: flex;
+      }
+    } // @include
+  } // @each
+} // @if
+
+/**
+ * Horizontal (row) flex items direction
+ */
+
+.o-flex--row,
+.o-flex--vertical {
+  flex-direction: row;
+}
+
+.o-flex--row-rev,
+.o-flex--vertical-rev {
+  flex-direction: row-reverse;
+}
+
+/**
+ * vertical (column) flex items direction
+ */
+
+.o-flex--column {
+  flex-direction: column;
+}
+
+.o-flex--column-rev {
+  flex-direction: column-reverse;
+}
+
+/**
+ * Wrapping
+ */
+
+.o-flex--wrap {
+  flex-wrap: wrap;
+}
+
+.o-flex--nowrap {
+  flex-wrap: nowrap;
+}
+
+.o-flex--wrap-rev {
+  flex-wrap: wrap-reverse;
+}
+
+/**
+ * Align items along the main axis of the current line of the flex container
+ */
+
+.o-flex--left,
+.o-flex--align-start {
+  justify-content: flex-start !important;
+}
+
+.o-flex--right,
+.o-flex--align-end {
+  justify-content: flex-end !important;
+}
+
+.o-flex--center,
+.o-flex--align-center {
+  justify-content: center !important;
+}
+
+.o-flex--justify,
+.o-flex--align-between {
+  justify-content: space-between !important;
+}
+
+.o-flex--align-around {
+  justify-content: space-around !important;
+}
+
+/**
+ * Align items in the cross axis of the current line of the flex container
+ * Similar to `justify-content` but in the perpendicular direction
+ */
+
+.o-flex--top,
+.o-flex--valign-start {
+  align-items: flex-start;
+}
+
+.o-flex--bottom,
+.o-flex--valign-end {
+  align-items: flex-end;
+}
+
+.o-flex--middle,
+.o-flex--valign-center {
+  align-items: center;
+}
+
+.o-flex--stretch,
+.o-flex--valign-center {
+  align-items: stretch;
+}
+
+/**
+ * Align self
+ */
+
+.o-flex--self-end {
+  align-self: flex-end;
+}
+
+
+/**
+ * Specify the flex grow factor, which determines how much the flex item will
+ * grow relative to the rest of the flex items in the flex container.
+ *
+ * Supports 1-5 proportions
+ *
+ * 1. Provide all values to avoid IE10 bug with shorthand flex
+ *    - http://git.io/vllC7
+ *
+ *    Use `0%` to avoid bug in IE10/11 with unitless flex basis. Using this
+ *    instead of `auto` as this matches what the default would be with `flex`
+ *    shorthand - http://git.io/vllWx
+ */
+
+.o-flex-grow,
+.o-flex-grow-1 {
+  flex: 1 1 0%; /* 1 */
+}
+
+.o-flex-grow-2 {
+  flex: 2 1 0%; /* 1 */
+}
+
+.o-flex-grow-3 {
+  flex: 3 1 0%; /* 1 */
+}
+
+.o-flex-grow-4 {
+  flex: 4 1 0%; /* 1 */
+}
+
+.o-flex-grow-5 {
+  flex: 5 1 0%; /* 1 */
+}
+
+/**
+ * Specify the flex shrink factor, which determines how much the flex item will
+ * shrink relative to the rest of the flex items in the flex container.
+ */
+
+.o-flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.o-flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.o-flex-shrink-2 {
+  flex-shrink: 2;
+}
+
+.o-flex-shrink-3 {
+  flex-shrink: 3;
+}
+
+.o-flex-shrink-4 {
+  flex-shrink: 4;
+}
+
+.o-flex-shrink-5 {
+  flex-shrink: 5;
+}
+
+/**
+ * Aligning with `auto` margins
+ * http://www.w3.org/TR/css-flexbox-1/#auto-margins
+ */
+
+.o-flex-expand {
+  margin: auto;
+}
+
+.o-flex-expand-left {
+  margin-left: auto;
+}
+
+.o-flex-expand-right {
+  margin-right: auto;
+}
+
+.o-flex-expand-top {
+  margin-top: auto;
+}
+
+.o-flex-expand-bottom {
+  margin-bottom: auto;
+}
+
+/**
+ * Basis
+ */
+
+.o-flex-basis-auto {
+  flex-basis: auto;
+}
+
+.o-flex-basis-0 {
+  flex-basis: 0;
+}
+
+/**
+ * Shorthand
+ *
+ * Declares all values instead of keywords like 'initial' to work around IE10
+ * https://www.w3.org/TR/css-flexbox-1/#flex-common
+ *
+ * 1. Fixes issue in IE 10 where flex-basis is ignored - https://git.io/vllMt
+ *    This ensures it overrides flex-basis set in other utilities.
+ */
+
+/**
+ * Sizes the item based on the width/height properties
+ */
+
+.o-flex-initial {
+  flex: 0 1 auto;
+  flex-basis: auto; /* 1 */
+}
+
+/**
+ * Sizes the item based on the width/height properties, but makes them fully
+ * flexible, so that they absorb any free space along the main axis.
+ */
+
+.o-flex-auto {
+  flex: 1 1 auto;
+  flex-basis: auto; /* 1 */
+}
+
+/**
+ * Sizes the item according to the width/height properties, but makes the flex
+ * item fully inflexible. Similar to initial, except that flex items are
+ * not allowed to shrink, even in overflow situations.
+ */
+
+.o-flex-none {
+  flex: 0 0 auto;
+  flex-basis: auto; /* 1 */
+}

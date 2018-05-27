@@ -7,12 +7,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="manifest" href="site.webmanifest">
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link href="https://fonts.googleapis.com/css?family=Prompt:500,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="jl-page">
   <nav class="jl-nav">
@@ -27,10 +27,48 @@
   </nav><!--/ .jl-nav -->
 
   <div class="jl-hero">
-    <video class="jl-hero__video" autoplay loop>
+    <video class="jl-hero__video" autoplay loop muted>
       <source type="video/mp4" src="/video/hero.mp4" />
     </video>
   </div><!--/ .jl-hero -->
+
+  <div class="jl-about" id="about">
+    <div class="o-wrapper">
+      <div class="o-layout o-layout--middle">
+        <div class="o-layout__item u-1/2@tablet">
+          <svg class="jl-about-logo jl-icon">
+            <use xlink:href="/svg/sprite.svg#logo-jenkinslorenzo" />
+          </svg>
+        </div>
+        <div class="o-layout__item u-1/2@tablet">
+          <div class="jl-box jl-box--dark">
+            <h2 class="jl-heading">
+              Mission
+            </h2>
+
+            <p>As technology moves this generation beyond the conceivable, a team of personally -
+              invested adversaries has never been more paramount. Jenkins Lorenzo was built on the
+              notion that providing tailored legal services should not be cost prohibitive to the small-
+              business owner. In doing so, Jenkins Lorenzo has created a new kind of law firm
+              –—creating a level of bespoke legal services from a by-gone era and fusing them with the
+              relentless legal and operational evolution facing every small business today.</p>
+          </div><!--/ .jl-box -->
+
+          <div class="jl-box jl-box--dark">
+            <h2 class="jl-heading">
+              Vision
+            </h2>
+
+            <p>In an effort to return “back to basics”, Jenkins Lorenzo has harnessed today’s technology to
+              streamline its operation, creating a client outlet custom fitted to each client’s needs.
+              Whether providing strategies for the advancement of bold risks in the boardroom or the
+              confidence and courage of a zealous advocate in the courtroom, Jenkins Lorenzo stands
+              resolute in its commitment to each of its clients.</p>
+          </div><!--/ .jl-box -->
+        </div><!--/ .o-layout__item -->
+      </div><!--/ .o-layout -->
+    </div><!--/ .o-wrapper -->
+  </div><!--/ #about -->
 
   <div class="jl-partners" id="partners">
     <figure class="jl-partner">
@@ -56,80 +94,175 @@
   <div class="jl-practice" id="practice">
     <div class="o-wrapper">
       <div class="jl-section">
-        <div class="jl-box">
-          <svg class="jl-icon">
-            <use xlink:href="/svg/sprite.svg#icon-real-estate" />
-          </svg>
+        <div class="o-layout">
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="jl-box">
+              <svg class="jl-icon">
+                <use xlink:href="/svg/sprite.svg#icon-real-estate" />
+              </svg>
 
-          <h3 class="jl-heading">
-            Real Estate
-          </h3>
+              <h3 class="jl-heading">
+                Real Estate
+              </h3>
 
-          <p>The Firm’s real estate practice represents investors, developers, joint ventures and
-            private equity funds in commercial and residential real estate transactions,
-            shepherding clients through the acquisition, development, sale, leasing and/or
-            financing of residential and commercial real estate.</p>
+              <p>The Firm’s real estate practice represents investors, developers, joint ventures and
+                private equity funds in commercial and residential real estate transactions,
+                shepherding clients through the acquisition, development, sale, leasing and/or
+                financing of residential and commercial real estate.</p>
 
-          <a class="o-flex--self-end" href="#">
-            more info
-          </a>
-        </div>
+              <a class="o-flex--self-end" href="#" data-featherlight="#practice-real-estate">
+                more info
+              </a>
+            </div><!--/ .jl-box -->
 
-        <div class="jl-box">
-          <svg class="jl-icon">
-            <use xlink:href="/svg/sprite.svg#icon-corp-defense" />
-          </svg>
+            <div class="u-visuallyhidden">
+              <div id="practice-real-estate">
+                <div class="jl-box">
+                  <svg class="jl-icon">
+                    <use xlink:href="/svg/sprite.svg#icon-real-estate" />
+                  </svg>
 
-          <h3 class="jl-heading">
-            Corporate Defense
-          </h3>
+                  <h3 class="jl-heading">
+                    Real Estate
+                  </h3>
 
-          <p>The Firm’s corporate practice is well versed in providing legal advice regarding
-            commercial transactions, including mergers, acquisitions, joint ventures and the
-            like. The Firm’s attorneys routinely negotiate and prepare purchase, merger,
-            operating and/or partnership agreements.</p>
+                  <p>The Firm’s real estate practice represents investors, developers, joint ventures and
+                    private equity funds in commercial and residential real estate transactions,
+                    shepherding clients through the acquisition, development, sale, leasing and/or
+                    financing of residential and commercial real estate. Our team is well versed in
+                    negotiating, drafting and/or reviewing organizational documents, including operating,
+                    partnership and joint venture agreements, promissory notes, mortgages, financing
+                    statements and guarantees, as well as third party agreements with architects, engineers,
+                    contractors, real estate brokers and other professionals.</p>
 
-          <a class="o-flex--self-end" href="#">
-            more info
-          </a>
-        </div>
+                  <p>In addition to the transactional aspect of its real estate practice, the Firm handles litigation
+                    matters on behalf of lenders, brokers, purchasers and sellers, including real estate holding
+                    companies, joint ventures and developers. The Firm has also represented clients in the
+                    prosecution or defense of loan defaults, mortgage foreclosures, fraud-based claims, breach
+                    of contract disputes, claims alleging real estate joint ventures or partnerships, claims for
+                    breach of contracted services and claims involving improper liens or clouds on title to real
+                    property.</p>
+                </div>
+              </div>
+            </div>
+          </div><!--/ .o-layout__item -->
 
-        <div class="jl-box">
-          <svg class="jl-icon">
-            <use xlink:href="/svg/sprite.svg#icon-comm-litigation" />
-          </svg>
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="jl-box">
+              <svg class="jl-icon">
+                <use xlink:href="/svg/sprite.svg#icon-corp-defense" />
+              </svg>
 
-          <h3 class="jl-heading">
-            Commercial Litigation
-          </h3>
+              <h3 class="jl-heading">
+                Corporate Defense
+              </h3>
 
-          <p>The Firm’s commercial litigation practice is adept in handling complex civil and
-            commercial litigation matters, ranging from pre-suit settlements and dispute
-            resolution alternatives to the prosecution or defense of contentious litigation.</p>
+              <p>The Firm’s corporate practice is well versed in providing legal advice regarding
+                commercial transactions, including mergers, acquisitions, joint ventures and the
+                like. The Firm’s attorneys routinely negotiate and prepare purchase, merger,
+                operating and/or partnership agreements.</p>
 
-          <a class="o-flex--self-end" href="#">
-            more info
-          </a>
-        </div>
+              <a class="o-flex--self-end" href="#" data-featherlight="#practice-corp-defense">
+                more info
+              </a>
+            </div><!--/ .jl-box -->
 
-        <div class="jl-box">
-          <svg class="jl-icon">
-            <use xlink:href="/svg/sprite.svg#icon-business-consulting" />
-          </svg>
+            <div class="u-visuallyhidden">
+              <div id="practice-corp-defense">
+                <div class="jl-box">
+                  <svg class="jl-icon">
+                    <use xlink:href="/svg/sprite.svg#icon-real-estate" />
+                  </svg>
 
-          <h3 class="jl-heading">
-            Business Consulting
-          </h3>
+                  <h3 class="jl-heading">
+                    Corporate Defense
+                  </h3>
 
-          <p>The Firm’s business consulting and crisis management practice represents
-            individuals and corporations ranging from start-up companies to large corporations.
-            Indeed, our team has extensive experience advising corporations and their officers
-            on acquisitions, mergers and joint ventures.</p>
+                  <p>The Firm’s corporate practice is well versed in providing legal advice regarding commercial transactions, including mergers, acquisitions, joint ventures and the like. The Firm’s attorneys routinely negotiate and prepare purchase, merger, operating and/or partnership agreements as well as debt, equity and asset instruments or agreements relating to the rendering of services or the manufacture, procurement and/or distribution of goods. Additionally, the Firm provides support in the negotiating, drafting and/or reviewing of employment agreements, including independent contractor, consulting, non-compete and non-disparagement agreements.</p>
 
-          <a class="o-flex--self-end" href="#">
-            more info
-          </a>
-        </div>
+                  <p>As part of the Firm’s business consulting practice, it is common for our attorneys to address corporate officers, boards of directors and personnel in a coordinated effort to provide counsel on the fiduciary obligations of corporate officers or in the acquisition, merger, liquidation and/or winding-down of operations to ensure compliance with organizational agreements and applicable law.</p>
+                </div>
+              </div>
+            </div>
+          </div><!--/ .o-layout__item -->
+
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="jl-box">
+              <svg class="jl-icon">
+                <use xlink:href="/svg/sprite.svg#icon-comm-litigation" />
+              </svg>
+
+              <h3 class="jl-heading">
+                Commercial Litigation
+              </h3>
+
+              <p>The Firm’s commercial litigation practice is adept in handling complex civil and
+                commercial litigation matters, ranging from pre-suit settlements and dispute
+                resolution alternatives to the prosecution or defense of contentious litigation.</p>
+
+              <a class="o-flex--self-end" href="#" data-featherlight="#practice-comm-litigation">
+                more info
+              </a>
+            </div><!--/ .jl-box -->
+
+            <div class="u-visuallyhidden">
+              <div id="practice-comm-litigation">
+                <div class="jl-box">
+                  <svg class="jl-icon">
+                    <use xlink:href="/svg/sprite.svg#icon-real-estate" />
+                  </svg>
+
+                  <h3 class="jl-heading">
+                    Commercial Litigation
+                  </h3>
+
+                  <p>The Firm’s commercial litigation practice is adept in handling complex civil and commercial litigation matters, ranging from pre-suit settlements and dispute resolution alternatives to the prosecution or defense of contentious litigation.  The Firm’s attorneys have handled a diverse array of litigation proceedings including, but not limited to, class actions, contract disputes, consumer finance claims, product liability and mass tort defects, vicarious liability and indemnity demands, unfair and deceptive trade practices, insurance coverage issues, commercial landlord-tenant disputes, and director and officer liability proceedings.</p>
+
+                  <p>To date, the Firm’s legal team has successfully represented Fortune 500 companies, publicly traded and privately held corporations, as well as financial institutions, organizations providing oil and natural resources, real estate developers, international importers, and local small-business owners.  Recognizing that each client’s needs are unique is paramount to the Firm’s overall holistic approach—a conscious awareness of economic and non-economic objectives together with an overall aversion to unnecessary risk, all while providing cost-effective approaches to everyday problem solving.</p>
+                </div>
+              </div>
+            </div>
+          </div><!--/ .o-layout__item -->
+
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="jl-box">
+              <svg class="jl-icon">
+                <use xlink:href="/svg/sprite.svg#icon-business-consulting" />
+              </svg>
+
+              <h3 class="jl-heading">
+                Business Consulting
+              </h3>
+
+              <p>The Firm’s business consulting and crisis management practice represents
+                individuals and corporations ranging from start-up companies to large corporations.
+                Indeed, our team has extensive experience advising corporations and their officers
+                on acquisitions, mergers and joint ventures.</p>
+
+              <a class="o-flex--self-end" href="#" data-featherlight="#practice-business-consulting">
+                more info
+              </a>
+            </div><!--/ .jl-box -->
+
+            <div class="u-visuallyhidden">
+              <div id="practice-business-consulting">
+                <div class="jl-box">
+                  <svg class="jl-icon">
+                    <use xlink:href="/svg/sprite.svg#icon-real-estate" />
+                  </svg>
+
+                  <h3 class="jl-heading">
+                    Business Consulting
+                  </h3>
+
+                  <p>The Firm’s business consulting and crisis management practice represents individuals and corporations ranging from start-up companies to large corporations. Indeed, our team has extensive experience advising corporations and their officers on acquisitions, mergers and joint ventures. The Firm’s lawyers are also well versed in employment matters, including drafting and negotiating employment, non-compete, non-disparagement and confidentiality agreements.</p>
+
+                  <p>Our background in corporate structure, coupled with almost two decades of combined litigation experience, allows the Firm to provide pre-litigation counseling, risk prevention and real-time solutions to its clients, avoiding costly business interruptions and unnecessary litigation expenses. In moments when litigation is unforeseen or unavoidable, the Firm’s crisis management division stands resolute in its effort to lessen the impact adverse litigation may have on the business, its officers, employees, profits and assets.</p>
+                </div>
+              </div>
+            </div>
+          </div><!--/ .o-layout__item -->
+        </div><!-- /.o-layout -->
       </div><!--/ .jl-section -->
     </div><!--/ .o-wrapper -->
   </div><!--/ .jl-practice -->
@@ -227,5 +360,41 @@
     </div><!--/ .o-wrapper -->
   </div><!--/ .jl-practice -->
 
+  <footer class="jl-footer">
+    <div class="o-wrapper">
+      <div class="o-layout">
+        <div class="o-layout__item u-1/2">
+          <img
+            class="jl-footer-logo"
+            src="/img/logo-jenkinslorenzo.svg"
+            alt=""
+          />
+          <p class="jl-footer-contentinfo" role="contentinfo">
+            &copy; 2018 by Jenkins Lorenzo LLC. All Rights Reserved.
+          </p>
+        </div>
+        <div class="o-layout__item u-1/2">
+          <p></p>
+          <ul class="jl-footer-list">
+            <li>
+              <a href="tel:+1-305-456-1450">
+                305.456.1450
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@jenkinslorenzo.com">
+                info@jenkinslorenzo.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>

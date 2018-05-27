@@ -7,11 +7,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 0 24px;
-  padding: 24px 96px;
+  margin: 0 0 $spacing-unit;
+  padding: $spacing-unit;
   background-color: #E7E7E7;
-  border-radius: 48px;
+  border-radius: $spacing-unit-large;
   color: $jl-color-primary;
+
+  @include mq($from: tablet) {
+    padding-left: $spacing-unit-huge;
+    padding-right: $spacing-unit-huge;
+  }
 
   .jl-icon {
     @include scut-size(scut-em(96px));
@@ -25,9 +30,31 @@
   a {
     color: inherit;
   }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  .featherlight & {
+    padding-top: $spacing-unit-large;
+    padding-bottom: $spacing-unit-large;
+    box-shadow: 0 0 24px rgba(#000, .75);
+
+    .jl-heading {
+      font-size: scut-em(36px);
+    }
+
+    p {
+      max-width: scut-rem(700px);
+    }
+  }
 }
 
 .jl-box--dark {
   background-color: $jl-color-primary;
   color: #fff;
+
+  .jl-heading {
+    border-bottom: 4px solid $jl-color-accent;
+  }
 }

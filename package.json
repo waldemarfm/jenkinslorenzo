@@ -21,6 +21,7 @@
   "dependencies": {
     "inuitcss": "^6.0.0",
     "node-sass": "^4.8.3",
+    "npm": "^6.1.0",
     "scut": "^1.4.0",
     "svg-sprite": "^1.4.0"
   }

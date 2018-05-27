@@ -138,10 +138,13 @@
 @import "components/components.box";
 @import "components/components.page";
 @import "components/components.hero";
+@import "components/components.about";
 @import "components/components.input";
+@import "components/components.footer";
 @import "components/components.contact";
 @import "components/components.section";
 @import "components/components.headings";
+@import "components/components.lightbox";
 @import "components/components.partners";
 
 
@@ -158,3 +161,4 @@ $inuit-offsets: false;
 // @import "inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.colors";
 @import "utilities/utilities.text";
+@import "utilities/utilities.visibility";

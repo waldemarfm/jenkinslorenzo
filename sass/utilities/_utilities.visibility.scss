@@ -13,3 +13,31 @@
   width: 1px;
   white-space: nowrap;
 }
+
+.u-hide {
+  display: none !important;
+}
+
+.u-hide\@tablet {
+  @include mq($from: tablet) {
+    display: none !important;
+  }
+}
+
+.u-hide\@desktop {
+  @include mq($from: desktop) {
+    display: none !important;
+  }
+}
+
+.u-show\@tablet {
+  @include mq($until: tablet) {
+    display: none !important;
+  }
+}
+
+.u-show\@desktop {
+  @include mq($until: desktop) {
+    display: none !important;
+  }
+}

@@ -4,8 +4,15 @@
 
 .jl-hero {
   position: relative;
+  overflow: hidden;
+  display: block;
   width: 100%;
   height: 100vh;
+
+  @include mq($from: tablet) {
+    height: calc(100vh - #{$jl-header-height});
+    min-height: scut-rem(768px);
+  }
 }
 
 .jl-hero__video {
@@ -13,4 +20,17 @@
   @include scut-size(100%);
   object-fit: cover;
   object-position: center;
+
+  @include mq($until: desktop) {
+    background: no-repeat center url('/img/bg-hero.jpg');
+    background-size: cover;
+  }
+}
+
+.jl-hero__logo {
+  @include scut-center-transform;
+  @include scut-size(scut-em(240px));
+  display: block;
+  color: $jl-color-primary;
+  font-size: 6vw;
 }

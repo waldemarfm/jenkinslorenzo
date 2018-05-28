@@ -13,5 +13,10 @@
 
 .jl-about-logo {
   @include scut-size(scut-em(493px 143px));
+  display: block;
   color: $jl-color-primary;
+
+  @include mq($from: tablet, $until: desktop) {
+    margin: 0 auto scut-em($spacing-unit-large);
+  }
 }

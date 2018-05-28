@@ -15,5 +15,12 @@ $jl-color-offwhite: #ECEDEE;
 
 // Spacing
 $spacing-unit: $inuit-global-spacing-unit;
+$spacing-unit-small: $inuit-global-spacing-unit-small;
 $spacing-unit-large: $inuit-global-spacing-unit-large;
 $spacing-unit-huge: $inuit-global-spacing-unit-huge;
+
+// Inuit
+$inuit-enable-layout--flush: true;
+
+// Other
+$jl-header-height: 4.5rem;

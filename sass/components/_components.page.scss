@@ -4,4 +4,9 @@
 
 .jl-page {
   font-family: Prompt, sans-serif;
+
+  @include mq($from: tablet) {
+    padding-top: $jl-header-height;
+  }
 }
+

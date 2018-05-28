@@ -3,12 +3,15 @@
    ======================================================================== */
 
 .jl-partners {
-  display: flex;
-  min-height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
   background-color: $jl-color-offwhite;
   justify-content: space-between;
+
+  @include mq($from: tablet) {
+    padding-top: $spacing-unit-large;
+    padding-bottom: $spacing-unit-large;
+  }
 }
 
 .jl-partner {
@@ -16,10 +19,13 @@
   flex: 1;
   overflow: hidden;
   margin-bottom: 0;
+  height: scut-rem(320px);
 
-  &:first-child {
-    margin-right: 24px;
-  } 
+  @include mq($from: tablet) {
+    height: 100vh;
+    max-height: scut-rem(500px);
+    min-height: scut-rem(768px);
+  }
 }
 
 .jl-partner__img {
@@ -30,16 +36,105 @@
 }
 
 .jl-partner__img--chase {
-  transform: scale(1.2) translateY(24px);
+  transform: scale(1.2) translateX(scut-em(-18px));
+
+  @include mq($from: tablet) {
+    transform: scale(1.2) translateY(scut-em($spacing-unit));
+  }
 }
 
 .jl-partner__name {
   @include scut-absolute(n 0 0 0);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: $spacing-unit-small;
+  padding-bottom: $spacing-unit-small;
   background-color: $jl-color-primary;
   color: #fff;
-  font-size: 32px;
+  font-size: scut-em(18px);
   text-align: center;
   text-transform: uppercase;
+
+  @include mq($from: tablet) {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    font-size: scut-em(32px);
+  }
+}
+
+/**
+ * Standalone page container
+ */
+
+.jl-partner-page {
+  max-width: scut-rem(1300px);
+}
+
+.jl-partner-header {
+  padding: $spacing-unit;
+  background-color: $jl-color-primary;
+  color: #fff;
+
+  @include mq($from: tablet) {
+    padding: $spacing-unit-large;
+  }
+
+  .jl-heading {
+    font-size: scut-em(16px);
+
+    @include mq($from: tablet) {
+      font-size: scut-em(32px);
+    }
+  }
+}
+
+.jl-partner-contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: scut-em($spacing-unit);
+    }
+  }
+
+  .jl-icon {
+    @include scut-size(scut-em(42px 28px));
+    margin-right: $spacing-unit;
+    color: $jl-color-accent;
+    flex-shrink: 0;
+
+    @include mq($until: tablet) {
+      font-size: 75%;
+    }
+
+    @include mq($from: tablet) {
+      margin-left: $spacing-unit-large;
+      margin-right: $spacing-unit-large;
+    }
+  }
+
+  a {
+    color: #fff;
+    font-size: scut-em(16px);
+    text-decoration: none;
+
+    @include mq($from: tablet) {
+      font-size: scut-em(24px);
+    }
+  }
+}
+
+.jl-partner-content {
+  padding: $spacing-unit;
+
+  @include mq($from: tablet) {
+    padding: $spacing-unit-large;
+  }
+}
+
+.gw-brand-underline {
+  border-bottom: 4px solid $jl-color-accent;
 }

@@ -17,16 +17,16 @@
 <body class="jl-page">
   <nav class="jl-nav">
     <div class="o-wrapper u-show@tablet">
-      <nav class="jl-navbar" role="navigation">
-        <a href="#about">About</a>
-        <a href="#partners">Partners</a>
-        <a href="#practice">Areas of Practice</a>
-        <a href="#contact">Contact</a>
+      <nav class="jl-navbar" id="js-navigation" role="navigation">
+        <a href="#about"><span>About</span></a>
+        <a href="#partners"><span>Partners</span></a>
+        <a href="#practice"><span>Areas of Practice</span></a>
+        <a href="#contact"><span>Contact</span></a>
       </nav>
     </div>
   </nav><!--/ .jl-nav -->
 
-  <div class="jl-hero">
+  <div class="jl-hero jl-js-section" id="hero">
     <video
       class="jl-hero__video js-jl-hero-video" autoplay loop muted
       data-src="/video/hero.mp4"
@@ -37,7 +37,7 @@
     </svg>
   </div><!--/ .jl-hero -->
 
-  <div class="jl-section" id="about">
+  <div class="jl-section jl-js-section" id="about">
     <div class="o-wrapper">
       <div class="o-layout o-layout--middle">
         <div class="o-layout__item u-1/2@desktop u-show@tablet">
@@ -75,7 +75,7 @@
     </div><!--/ .o-wrapper -->
   </div><!--/ #about -->
 
-  <div class="jl-partners" id="partners">
+  <div class="jl-partners jl-js-section" id="partners">
     <div class="o-layout">
       <div class="o-layout__item u-1/2@tablet">
         <figure class="jl-partner">
@@ -103,7 +103,7 @@
     </div>
   </div>
 
-  <div class="jl-practice" id="practice">
+  <div class="jl-practice jl-js-section" id="practice">
     <div class="o-wrapper">
       <div class="jl-section">
         <div class="o-layout">
@@ -279,7 +279,7 @@
     </div><!--/ .o-wrapper -->
   </div><!--/ .jl-practice -->
 
-  <div class="jl-contact" id="contact">
+  <div class="jl-contact jl-js-section" id="contact">
     <div class="o-wrapper">
       <div class="jl-section">
         <div class="o-layout o-layout--top o-layout--huge">
@@ -357,8 +357,7 @@
                 />
               </div>
             </form>
-
-          </div>
+          </div><!--/ .o-layout__item -->
           <div class="o-layout__item u-1/2@desktop u-show@desktop">
             <div class="jl-contact-map">
               <iframe
@@ -413,6 +412,9 @@
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
   <script src="/js/scripts.js"></script>
 </body>

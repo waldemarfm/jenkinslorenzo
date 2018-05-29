@@ -26,5 +26,9 @@
     @include mq($from: desktop  ) {
       flex: 1;
     }
+
+    &.is-active span {
+      border-bottom: 4px solid $jl-color-accent;
+    }
   }
 }

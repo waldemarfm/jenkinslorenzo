@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "npx node-sass --include-path node_modules sass/styles.scss public/css/styles.css",
-    "sass-watch": "npx node-sass -w -r --include-path node_modules sass/styles.scss public/css/styles.css",
-    "svg-sprite": "svg-sprite --symbol --symbol-dest . --symbol-sprite svg/sprite.svg --svg-namespace-classnames=false --dest public 'public/svg/**/*.svg'"
+    "sass": "npx node-sass --include-path node_modules sass/styles.scss css/styles.css",
+    "sass-watch": "npx node-sass -w -r --include-path node_modules sass/styles.scss css/styles.css",
+    "svg-sprite": "svg-sprite --symbol --symbol-dest . --symbol-sprite svg/sprite.svg --svg-namespace-classnames=false --dest . 'svg/**/*.svg'"
   },
   "repository": {
     "type": "git",

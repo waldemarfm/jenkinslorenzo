@@ -3,11 +3,17 @@
    ======================================================================== */
 
 .jl-about {
-  padding-top: $spacing-unit-large;
-  padding-bottom: $spacing-unit-large;
 
   .jl-box:last-of-type {
     margin-bottom: 0;
+  }
+
+  @include mq($from: tablet) {
+    .jl-box {
+      margin-bottom: scut-em($spacing-unit-large);
+      min-height: scut-em(350px);
+      justify-content: center;
+    }
   }
 }
 

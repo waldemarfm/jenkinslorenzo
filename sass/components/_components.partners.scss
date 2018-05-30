@@ -132,6 +132,11 @@
 
   @include mq($from: tablet) {
     padding: $spacing-unit-large;
+
+    .jl-heading {
+      color: $jl-color-primary;
+      font-size: scut-em(18px);
+    }
   }
 }
 

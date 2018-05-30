@@ -6,6 +6,10 @@
   @include scut-fixed(0 0 n 0);
   z-index: 1;
   background-color: $jl-color-primary;
+
+  @include mq($until: tablet) {
+    display: none;
+  }
 }
 
 .jl-navbar {
